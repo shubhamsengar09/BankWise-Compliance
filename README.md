@@ -6,18 +6,23 @@ BankWise-Compliance is a Spring Boot application that handles banking transactio
 
 ## Features
 
-- Track and process banking transactions
-- Flag suspicious transactions with reasons
-- Support multiple currencies and transaction types
-- REST APIs for transaction management
-
+- **Transaction Analysis:** Detects suspicious transactions based on:
+  - Large transaction amounts (greater than 10,000)
+  - High frequency of transactions within a short time window (5 or more in 5 minutes)
+  - Rapid movement of funds between deposits and withdrawals
+  - Round amount transactions (amounts without cents)
+- **Alert Generation:** Automatically generates alerts for suspicious transactions.
+- **User Management:** Secure user registration and password management with password encoding.
+- **Transaction & Alert Persistence:** Uses repositories for storing transactions, alerts, and user data.
 ---
 
 ## Technologies Used
 
-- Java 17, Spring Boot
-- Maven
-- MySQL 
+- Java 17+
+- Spring Boot Framework
+- Spring Data JPA
+- Spring Security (Password Encoding)
+- LocalDateTime for timestamp management
 
 ---
 
@@ -28,6 +33,7 @@ BankWise-Compliance is a Spring Boot application that handles banking transactio
 - Java 17 or higher
 - Maven
 - Git
+- MySql
 
 ### Clone the Repository
 
