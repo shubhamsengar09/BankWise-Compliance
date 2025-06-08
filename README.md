@@ -17,9 +17,7 @@ BankWise-Compliance is a Spring Boot application that handles banking transactio
 
 - Java 17, Spring Boot
 - Maven
-- Docker
-- MySQL (or your choice of DB)
-- Azure Container Registry & Azure App Service (for deployment)
+- MySQL 
 
 ---
 
@@ -29,7 +27,6 @@ BankWise-Compliance is a Spring Boot application that handles banking transactio
 
 - Java 17 or higher
 - Maven
-- Docker
 - Git
 
 ### Clone the Repository
